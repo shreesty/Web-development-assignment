@@ -1,0 +1,64 @@
+
+.nav-bar a
+{
+    text-decoration: none;
+   
+    
+}
+
+.nav-bar li
+{
+    list-style: none;
+    margin:10px 30px;
+    
+}
+
+.nav-bar ul
+{
+    display:flex;
+    
+}
+
+.nav-bar
+{
+    padding:5px;
+    background-color: beige;
+    height:60px;
+    width:100%;
+    margin: 10px;
+}
+
+.About
+
+{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(photo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+   
+}
+
+.text1
+{
+    margin-left: 300px;
+    height:60px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.text2
+{
+    margin-top:20px;
+    font-size: 24px;
+}
+
+.hamro-blog
+{
+    margin-right: 30px;
+    font-size: 21px;
+    color: rgb(226, 43, 43);
+    font-weight: bold;
+}

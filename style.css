@@ -67,14 +67,24 @@
 
 .Blogs
 {
-    height:800px;
+    height:1500px;
+    width:1850px;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     background-color: lightblue;
 
+}
+.Title
+{
+    
+    font-weight: bold;
+    font-size: 48px;
+    width:100%;
+    text-align: center;
+    
+  
 }
 
 .first-blog, .second-blog , .third-blog, .fourth-blog
@@ -90,6 +100,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+   
     
 }
 

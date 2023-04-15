@@ -1,9 +1,7 @@
 
 .nav-bar a
 {
-    text-decoration: none;
-   
-    
+    text-decoration: none;  
 }
 
 .nav-bar li
@@ -20,7 +18,6 @@
     
 }
 
-
 .nav-bar
 {
     padding:5px;
@@ -30,7 +27,6 @@
     margin: 10px;
    
 }
-
 
 .About
 
@@ -71,10 +67,12 @@
 
 .Blogs
 {
-    height:400px;
+    height:800px;
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color: lightblue;
 
 }
@@ -91,6 +89,7 @@
     padding:30px;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
     
 }
 
@@ -98,7 +97,11 @@
 {
     background-image: url(blog1.jpeg);
 
+}
 
+.first-blog > div, .second-blog > div, .third-blog > div, .fourth-blog > div
+{
+    display:none;
 }
 
 .second-blog
@@ -118,3 +121,4 @@
 
     background-image: url(blog4.png);
 }
+

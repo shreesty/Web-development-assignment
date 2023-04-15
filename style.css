@@ -1,3 +1,4 @@
+
 .nav-bar a
 {
     text-decoration: none;  
@@ -16,6 +17,7 @@
     display:flex;
     
 }
+
 .nav-bar
 {
     padding:5px;
@@ -66,7 +68,6 @@
 .Blogs
 {
     height:1000px;
-    width:100%;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -74,21 +75,19 @@
 
 }
 
-
 .first-blog, .second-blog , .third-blog, .fourth-blog
 {
 
     height: 200px;
     width: 300px;
-    /* margin-top: 50px; */
+    margin-top: 30px;
     border: 3px solid black;
     border-radius: 15px;
-    margin:50px;
+    margin:30px;
     padding:30px;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-   
     
 }
 
@@ -101,11 +100,6 @@
 .first-blog > div, .second-blog > div, .third-blog > div, .fourth-blog > div
 {
     display:none;
-}
-
- h2
-{
-    margin: 20px;
 }
 
 .second-blog
@@ -125,3 +119,5 @@
 
     background-image: url(blog4.png);
 }
+
+

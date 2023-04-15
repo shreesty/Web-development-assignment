@@ -2,7 +2,6 @@
 
 let About = document.querySelector('.About');
 let about = document.querySelector('.about');
-let Blogs = documents.querySelector('.Blogs');
 
 // about.addEventListener('click',function()
 // {

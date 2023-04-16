@@ -84,7 +84,6 @@
         max-width: 800px;
         margin: 0 auto;
         padding: 20px 0px;
-        margin-left:400px;
        
       }
 
@@ -111,14 +110,16 @@
       footer {
         background-color: #333;
         color: #fff;
-        padding: 1em;
+        
         text-align: center;
       }
 
       .img
       {
         height: 600px;
-        width:1000px;
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
         background-image: url(blog4.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -127,34 +128,41 @@
 
 
 
-    .nav-bar a
-    {
-        text-decoration: none;  
-    }
+   
+      .nav-bar a {
+    text-decoration: none;
+  }
+  .nav-bar li {
+    list-style: none;
+    margin: 0.5rem 1rem;
+    display: inline-block;
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .nav-bar {
+    padding: 0.5rem;
+    background-color: beige;
+    height: 10vh;
+    width: 100%;
+    margin: 1rem;
+  }
 
-    .nav-bar li
-    {
-        list-style: none;
-        margin:10px 30px;
-        display: inline-block;
-        
-    }
+  @media screen and (max-width: 500px) {
+  .img {
 
-    .nav-bar ul
-    {
-        display:flex;
-        
-    }
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 
-    .nav-bar
-    {
-        padding:5px;
-        background-color: beige;
-        height:60px;
-        width:100%;
-        margin: 10px;
-      
-    }
+@media screen and (max-width: 1000px) {
+  .benefit {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
       
     </style>
     

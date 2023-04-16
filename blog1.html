@@ -63,6 +63,9 @@ The extra space will come in handy when you’re trying to sprawl out across the
     margin-right:auto ;
     background-repeat: repeat;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    
    }
 
    .img1
@@ -82,36 +85,40 @@ The extra space will come in handy when you’re trying to sprawl out across the
    }
 
 
-   .nav-bar a
-{
-    text-decoration: none;  
-}
-
-.nav-bar li
-{
+   .nav-bar a {
+    text-decoration: none;
+  }
+  .nav-bar li {
     list-style: none;
-    margin:10px 30px;
+    margin: 0.5rem 1rem;
     display: inline-block;
-    
-}
-
-.nav-bar ul
-{
-    display:flex;
-    
-}
-
-.nav-bar
-{
-    padding:5px;
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .nav-bar {
+    padding: 0.5rem;
     background-color: beige;
-    height:60px;
-    width:100%;
-    margin: 10px;
-   
+    height: 10vh;
+    width: 100%;
+    margin: 1rem;
+  }
+
+
+  @media screen and (max-width: 800px) {
+  .img1,.img2 {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
 
-   
+@media screen and (max-width: 800px) {
+  .nav-bar {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
    
 </style>
 

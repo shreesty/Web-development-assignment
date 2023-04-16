@@ -71,42 +71,44 @@
         margin-right: auto;
         height:300px;
         width:300px;
-        background-image: url(blog3-Author.png);
-        background-size: cover;
-        background-repeat: no-repeat;
 
         }
 
-
-.nav-bar a
-{
-    text-decoration: none;  
-}
-
-.nav-bar li
-{
+        .nav-bar a {
+    text-decoration: none;
+  }
+  .nav-bar li {
     list-style: none;
-    margin:10px 30px;
+    margin: 0.5rem 1rem;
     display: inline-block;
-    
-}
-
-.nav-bar ul
-{
-    display:flex;
-    
-}
-
-.nav-bar
-{
-    padding:5px;
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .nav-bar {
+    padding: 0.5rem;
     background-color: beige;
-    height:60px;
-    width:100%;
-    margin: 10px;
-   
+    height: 10vh;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  @media screen and (max-width: 800px) {
+  .img {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
 
+
+@media screen and (max-width: 700px) {
+  p{
+    height:300px;
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 
 </style>
 

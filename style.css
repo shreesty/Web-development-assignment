@@ -1,138 +1,114 @@
-
-.nav-bar a
-{
-    text-decoration: none;  
-}
-
-.nav-bar li
-{
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Mobile-first styles */
+  .nav-bar a {
+    text-decoration: none;
+  }
+  .nav-bar li {
     list-style: none;
-    margin:10px 30px;
+    margin: 0.5rem 1rem;
     display: inline-block;
-    
-}
-
-.nav-bar ul
-{
-    display:flex;
-    
-}
-
-.nav-bar
-{
-    padding:5px;
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .nav-bar {
+    padding: 0.5rem;
     background-color: beige;
-    height:60px;
-    width:100%;
-    margin: 10px;
-   
-}
-
-.About
-
-{
-    height: 500px;
+    height: 10vh;
+    width: 100%;
+    margin: 1rem;
+  }
+  .About {
+    height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(photo.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
-    /* background-color: rgba(255, 255, 255, 0.25); */
-   
-}
-
-.text1
-{
-    margin-left: 300px;
-    height:60px;
-    font-size: 50px;
+    color: white;
+  }
+  .text1 {
+    text-align: center;
+    height: 10vh;
+    font-size: 5vw;
     font-weight: bold;
-}
-.text2
-{
-    margin-top:20px;
-    font-size: 24px;
-}
-
-.hamro-blog
-{
-    margin-right: 30px;
-    font-size: 21px;
+  }
+  .text2 {
+    margin-top: 1vh;
+    font-size: 2vw;
+  }
+  .hamro-blog {
+    margin-right: 1vw;
+    font-size: 1.5vw;
     color: rgb(226, 43, 43);
     font-weight: bold;
-    
-}
-
-.Blogs
-{
-    height:1000px;
-    display:flex;
+  }
+  .Blogs {
+    height: auto;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
     background-color: lightblue;
-
-}
-
-.first-blog, .second-blog , .third-blog, .fourth-blog
-{
-
-    height: 200px;
-    width: 300px;
-    margin-top: 30px;
-    border: 3px solid black;
-    border-radius: 15px;
-    margin:30px;
-    padding:30px;
+    /* flex-direction: column; */
+    padding:20px;
+  }
+  .first-blog,
+  .second-blog,
+  .third-blog,
+  .fourth-blog {
+    height: 20vh;
+    width: 40vw;
+    margin: 2vw;
+    border: 0.15em solid black;
+    border-radius: 1rem;
+    padding: 1vw;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    
-}
-
-.first-blog
-{
+  }
+  .first-blog > div,
+  .second-blog > div,
+  .third-blog > div,
+  .fourth-blog > div {
+    display: none;
+  }
+  .first-blog {
     background-image: url(blog1.jpeg);
-
-}
-
-.first-blog > div, .second-blog > div, .third-blog > div, .fourth-blog > div
-{
-    display:none;
-}
-
-.second-blog
-{
-
+  }
+  .second-blog {
     background-image: url(blog2.jpg);
-}
-
-.third-blog
-{
-
+  }
+  .third-blog {
     background-image: url(blog3.png);
-}
-
-.fourth-blog
-{
-
+  }
+  .fourth-blog {
     background-image: url(blog4.png);
+  }
+
+h2
+{
+    margin-top: 120px;
 }
 
-
-
-form {
-    margin-top: 400px;
+  /* form {
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  label, input {
+  label,
+  input {
     margin: 0.5rem 0;
   }
-  
   button {
     margin: 1rem 0;
     padding: 0.5rem 1rem;
@@ -142,8 +118,31 @@ form {
     border-radius: 0.25rem;
     cursor: pointer;
   }
-  
   button:hover {
     background-color: #0062cc;
   }
-  
+   */
+  /* Media queries */
+  @media only screen and (min-width: 768px) {
+    /* Tablets and larger screens */
+    .first-blog,
+    .second-blog,
+    .third-blog,
+    .fourth-blog {
+      width: 20vw;
+    }
+    .first-blog,
+    .second-blog,
+    .third-blog,
+    .fourth-blog {
+      height: 20vh;
+      width: 30vw;
+      margin: 2rem;
+      border: 3px solid black;
+      border-radius: 1rem;
+      padding: 1rem;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
+  }
